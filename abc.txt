@@ -1,0 +1,3 @@
+GRAPPA is a parallel MRI technique that enables accelerated data acquisition using multi-channel receiver coils. 
+However, processing a large data limits the performance of GRAPPA in terms of reconstruction time. 
+This work presents a new GPU-enabled-GRAPPA reconstruction method using optimized CUDA kernels, where multiple threads simultaneously communicate and cooperate to perform: (i) parallel fittings of GRAPPA kernel on auto-calibration signals; (ii) parallel estimations of reconstruction coefficients; (iii) parallel interpolations in under-sampled k-space. In-vivo results of 8-channel, 1.5T human head dataset show that the proposed method speeds up the GRAPPA reconstruction time upto 15x without compromising the image quality.
